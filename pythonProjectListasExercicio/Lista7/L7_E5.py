@@ -14,6 +14,6 @@ print("Menor de cada coluna: ")
 for i in range(10):
     menor = 51
     for j in range(10):
-        if m[j][i] < menor:
+        if m[j][i] < menor:  # m[j][i] significa que ele fixa o i e anda pelo j
             menor = m[j][i]
     print(f"{menor:02}", end=' ')

@@ -42,3 +42,56 @@ else:
         for j in range(5,9):
             print(f"{m[i][j]:02}", end=" ")
         print()
+
+''' 
+from random import randint
+from termcolor import colored
+
+m = []
+for i in range(9):
+    m.append([])
+    for j in range(9):
+        m[i].append(randint(0,10))
+        print(f'{m[i][j]:02}', end=' ')
+    print()
+
+while True:
+    q = int(input('\nInforme o quadrante >> '))
+    if 1 <= q <= 4:
+        break
+    print('Quadrante inválido. Digite um valor entre 1 e 4')
+
+print()
+if q == 1:
+    for i in range(9):
+        for j in range(9):
+            if i < 4 and j < 4:
+                print(colored(f'{m[i][j]:02}','red'), end=' ')
+            else:
+                print(f'{m[i][j]:02}', end=' ')
+        print()
+elif q == 2:
+    for i in range(9):
+        for j in range(9):
+            if i < 4 and j > 4:
+                print(colored(f'{m[i][j]:02}','red'), end=' ')
+            else:
+                print(f'{m[i][j]:02}', end=' ')
+        print()
+elif q == 3:
+    for i in range(9):
+        for j in range(9):
+            if i > 4 and j < 4:
+                print(colored(f'{m[i][j]:02}','red'), end=' ')
+            else:
+                print(f'{m[i][j]:02}', end=' ')
+        print()
+else:
+    for i in range(9):
+        for j in range(9):
+            if i > 4 and j > 4:
+                print(colored(f'{m[i][j]:02}','red'), end=' ')
+            else:
+                print(f'{m[i][j]:02}', end=' ')
+        print()
+'''

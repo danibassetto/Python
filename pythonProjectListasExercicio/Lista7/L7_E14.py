@@ -8,7 +8,7 @@ for i in range(10):
     notas.append([])
     for j in range(5):
         notas[i].append(randint(0,10))
-    notas[i].sort()
+    notas[i].sort()  # Sort vai ordenar para que pegue apenas as intermediárias
     media = 0
     for j in range(1,4):
         media += notas[i][j]
