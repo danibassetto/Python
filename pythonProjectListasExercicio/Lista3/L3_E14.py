@@ -1,4 +1,4 @@
-#Jogo do bicho
+# Jogo do bicho
 from random import randint
 
 print('Entre com os dois grupos da aposta')
